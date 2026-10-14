@@ -1,0 +1,35 @@
+{
+  "name": "comtelindo-governance-hub",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "api": "node server/index-postgres.mjs",
+    "api:production": "node server/migrate-schema.mjs && node server/index-postgres.mjs",
+    "api:json": "node server/index.mjs",
+    "migrate:postgres": "node server/migrate-json-to-postgres.mjs",
+    "seed:director": "node server/seed-director.mjs",
+    "dev:full": "concurrently \"npm run api\" \"npm run dev\"",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lucide-react": "latest",
+    "multer": "^2.0.2",
+    "pg": "^8.13.1",
+    "dotenv": "^16.4.7",
+    "vite": "^6.1.0",
+    "typescript": "^5.7.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5"
+  }
+}

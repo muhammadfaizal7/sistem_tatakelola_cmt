@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: gcg-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: gcg_monev
+      POSTGRES_USER: gcg_app
+      POSTGRES_PASSWORD: Faizal070104
+    ports:
+      - "55432:5432"
+    volumes:
+      - gcg-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gcg_app -d gcg_monev"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  gcg-postgres-data:

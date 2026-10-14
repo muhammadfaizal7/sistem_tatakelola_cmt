@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "Agus Riyanto",
+      "email": "admin@comtelindo.co.id",
+      "role": "admin",
+      "unit": "GCG & Kepatuhan",
+      "password": {
+        "salt": "4cb0395b9ae6d92533b70e5d9ec5d062",
+        "hash": "1fb78b8485d67ce8837cc5c6143a052e9bba53bd57641e8c164d911f3e005e387efd0c7465d05f5c2fb4e4f444ad6a3721edbe72aeb2e9d3ab7741e4c8ab984d"
+      }
+    },
+    {
+      "id": "usr-manager",
+      "name": "Dina Maharani",
+      "email": "manager@comtelindo.co.id",
+      "role": "manager",
+      "unit": "Procurement",
+      "password": {
+        "salt": "a79102730796300e1cb2e8423c09db3c",
+        "hash": "e40435ed88f4cd9e183b6174e0b9c582cbba5682eed65289ffd3163038c40b2f20dd60c8d76f8f6c553ceae2d748040be4ed69b25348dd60dec812a9e4286adc"
+      }
+    },
+    {
+      "id": "usr-karyawan",
+      "name": "Rudi Hartono",
+      "email": "karyawan@comtelindo.co.id",
+      "role": "karyawan",
+      "unit": "Business Operations Support",
+      "password": {
+        "salt": "1bf3dd2db9f9953e665f11b20fe47405",
+        "hash": "152b505bd708e3274634b9ee265b75f3608523d3a3b5051411bfb5e86b5ebce0686276380d268c44d4cf3ebf63d0b2f641e82395544ea808f5d5c7befac3cbd6"
+      }
+    }
+  ],
+  "documents": [
+    {
+      "id": "64c8803f-12db-4758-aa30-e02af3aa2b10",
+      "code": "XSOP-RET-019",
+      "title": "Preventive Maintenance",
+      "type": "XSOP / SOP",
+      "unit": "GCG & Kepatuhan",
+      "version": "1.0",
+      "status": "Draft",
+      "fileName": "XSOP-RET-015 Preventive Maintenance Perangkat Aktif.pdf",
+      "filePath": "5ab38523d762af3a30b6e389e4ad36ef",
+      "fileType": "application/pdf",
+      "fileSize": 322590,
+      "uploadedBy": "usr-admin",
+      "createdAt": "2026-10-14T01:15:38.363Z"
+    }
+  ],
+  "approvals": [],
+  "auditLogs": [
+    {
+      "id": "dd3e8d31-ce7c-40b2-946e-b027f5e4d455",
+      "actorId": "usr-admin",
+      "action": "login",
+      "entityType": "session",
+      "entityId": null,
+      "metadata": {},
+      "createdAt": "2026-10-14T01:20:24.660Z"
+    },
+    {
+      "id": "b287ba47-5474-417f-b6dd-d3aaefd60e30",
+      "actorId": "usr-manager",
+      "action": "login",
+      "entityType": "session",
+      "entityId": null,
+      "metadata": {},
+      "createdAt": "2026-10-14T01:20:24.728Z"
+    }
+  ]
+}
